@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox Tutorial</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- flex-grow all children have flex-grow:0 -->
+
+    <style>
+      .container {
+        display: flex;
+      }
+      /* .box {
+        flex-grow: 1;
+      } */
+      .box-1 {
+        flex-grow: 2;
+      }
+      .box-2 {
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!--parent = flex-container  -->
+    <div class="container">
+      <!-- children = flex-items -->
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <!-- <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div> -->
+    </div>
+  </body>
+</html>
+
+<!-- So here lets examine what is going on the first thing that we need to do is that we created a .container and it is called display flex the second thing that we are doing is we are working with flex grow the main thing that we need to take away from here is that this will increase the size of the container the important take away from here is that when doing so if we increase the number then the container is going to get smaller  -->

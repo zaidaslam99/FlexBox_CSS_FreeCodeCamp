@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox Tutorial</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- align-self -->
+
+    <style>
+      .container {
+        display: flex;
+        height: 500px;
+        align-items: flex-end;
+      }
+      .box-5 {
+        align-self: flex-start;
+      }
+      .box-3 {
+        align-self: stretch;
+      }
+      .box-1 {
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!--parent = flex-container  -->
+    <div class="container">
+      <!-- children = flex-items -->
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <!-- <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div> -->
+    </div>
+  </body>
+</html>
+
+<!-- So here I had a cool momment and that being we are wirjubg with align items and this means that we want it to be in a box but the mistake that I made was thinking that the box only goes horizontal rather that is not the case it also aligns vertical that is the key take away from here so ntocie the .container we are using flex end and now when it comes to each of the div the thing that we need to take away from here is when it comes to working with align-self and what this does is that it aligns each container in this case its the box notice 5 is at the start 3 is streched 1 is centered and 2 and 4 are at the end it shows horizontal positioning -->

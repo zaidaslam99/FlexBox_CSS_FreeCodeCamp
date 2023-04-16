@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox Tutorial</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- order ===  all children have order:0 by default-->
+
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+      .box-1 {
+        order: 1;
+      }
+      .box-2 {
+        order: 3;
+      }
+      .box-5 {
+        order: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <!--parent = flex-container  -->
+    <div class="container">
+      <!-- children = flex-items -->
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <!-- <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div>
+      <div class="box generic">G</div> -->
+    </div>
+  </body>
+</html>
+
+<!-- So here lets examine what is going on the first thing that we need to know is this that in the style tag there is something new and that is called order and the thing to take away from here is this say that we use the number 1 2 3 the number that we are going to put thats how they are going to be showing up in the div that is something that we need to understand here  -->
